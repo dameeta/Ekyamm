@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+.login-Main{
+    box-sizing: border-box;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    width: 1366px;
+    height: 768px;
+    background: linear-gradient(180deg, #DFDAFB 0%, #F9CCC5 100%), #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.loginForm{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    /* margin: auto; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-68%);
+    left: 35%;
+    right: 50%;
+    /* transform: translateX(-68%); */
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+
+    width: 466px;
+    height: 444px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 32px;
+
+    /* Inside auto layout */
+
+    flex: auto;
+    /* flex: none; */
+    order: 0;
+    flex-grow: 0;
+}
+
+.loginButton{
+    position: absolute;
+    width: 161px;
+    height: 45px;
+    top: 319px;
+    /* left: 108px; */
+    /* margin-left: 80%; */
+
+    background: linear-gradient(90deg, #BBA3E4 0%, #E7A1A0 100%);
+    border-radius: 12px;
+}
+
+.loginInput{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 24px;
+gap: 10px;
+
+width: 386px;
+height: 52px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+}
