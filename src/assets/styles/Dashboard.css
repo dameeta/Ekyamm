@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+.login-Main{
+    box-sizing: border-box;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    width: 1366px;
+    height: 768px;
+    background: linear-gradient(180deg, #DFDAFB 0%, #F9CCC5 100%), #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* padding: 21px 18px; */
+    /* gap: 65px; */
+
+    /* position: absolute; */
+    /* width: 64px; */
+    /* height: 610.08px; */
+    /* left: 0px; */
+    /* top: 0px; */
+
+    background: linear-gradient(180deg, rgba(176, 164, 245, 0.9) 0%, rgba(237, 161, 151, 0.9) 100%);
+
+}
+
+.appDrawer {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.navBar {
+    background: rgba(255, 255, 255, 0.5);
+    /* background: #ffffff80; */
+    /* background-color: #ffffff80; */
+    /* background: white; */
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+}
+
+.drawer {
+    height: 80%;
+}
