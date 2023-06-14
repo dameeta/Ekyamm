@@ -20,6 +20,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import Cards from '../components/DashboardComponents/Cards';
+import { Grid } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -81,7 +83,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Box className='login-Main' sx={{ display: 'flex' }}>
+    <Box className='login-Main' sx={{ display: 'flex', width: '100%' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open} className='appDrawer'>
         <Toolbar className='navBar'>
@@ -119,12 +121,12 @@ export default function Dashboard() {
         </DrawerHeader>
         <Divider />
         {/* <div className='sidebar'> */}
-          <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          <List className='list'>
+            {['Dashboard', 'Add Prescription', 'Post Session Notes', 'Pending Tasks', 'Therapist', 'Patients', 'Patients', 'Calender', 'Reports', 'Settings'].map((text, index) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                    {index % 2 === 0 ? <InboxIcon /> : <InboxIcon />}
                   </ListItemIcon>
                   <ListItemText primary={text} />
                 </ListItemButton>
@@ -135,7 +137,24 @@ export default function Dashboard() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+          <Grid container spacing={3}>
+            <Grid item lg={3} md={6} sm={6} xs={12}>
+              <Cards />
+            </Grid>
+            <Grid item lg={3} md={6} sm={6} xs={12}>
+              <Cards />
+            </Grid>
+            <Grid item lg={3} md={6} sm={6} xs={12}>
+              <Cards />
+            </Grid>
+            <Grid item lg={3} md={6} sm={6} xs={12}>
+              <Cards />
+            </Grid>
+          </Grid>
+          </Grid>
+        </Grid>
       </Main>
     </Box>
   );

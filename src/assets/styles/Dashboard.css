@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box  ;
+    box-sizing: border-box ;
 }
 
 .login-Main{
@@ -14,6 +14,7 @@
     background: linear-gradient(180deg, #DFDAFB 0%, #F9CCC5 100%), #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .sidebar {
@@ -51,4 +52,35 @@
 
 .drawer {
     height: 80%;
+}
+
+.list {
+    border-bottom-right-radius: 35px;
+    background: linear-gradient(180deg, rgba(176, 164, 245, 0.9) 0%, rgba(237, 161, 151, 0.9) 100%);
+}
+
+.topCards {
+    /* background: rgba(255, 255, 255, 0.5); */
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 21px 16px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
 }
