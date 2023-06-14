@@ -22,6 +22,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Cards from '../components/DashboardComponents/Cards';
 import { Grid } from '@mui/material';
+import TherapistList from '../components/DashboardComponents/TherapistList';
 
 const drawerWidth = 240;
 
@@ -137,7 +138,7 @@ export default function Dashboard() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Grid container spacing={3}>
+        <Grid container spacing={3} sx={{display: 'flex'}}>
           <Grid item xs={12}>
           <Grid container spacing={3}>
             <Grid item lg={3} md={6} sm={6} xs={12}>
@@ -151,6 +152,13 @@ export default function Dashboard() {
             </Grid>
             <Grid item lg={3} md={6} sm={6} xs={12}>
               <Cards />
+            </Grid>
+          </Grid>
+          </Grid>
+          <Grid item xs={12}>
+          <Grid container spacing={3}>
+            <Grid item >
+              <TherapistList />
             </Grid>
           </Grid>
           </Grid>
