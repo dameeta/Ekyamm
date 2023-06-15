@@ -87,7 +87,7 @@ export default function Dashboard() {
     <Box className='login-Main' sx={{ display: 'flex', width: '100%' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open} className='appDrawer'>
-        <Toolbar className='navBar'>
+        <Toolbar className='navBar' sx={{background: '#ffffff80'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -109,20 +109,22 @@ export default function Dashboard() {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
+            background: 'inherit',
+            border: 0
           },
         }}
         variant="persistent"
         anchor="left"
         open={open}
       >
-        <DrawerHeader className='sidebar'>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
+        {/* <DrawerHeader className='sidebar'> */}
+        {/* </DrawerHeader> */}
+        {/* <Divider /> */}
         {/* <div className='sidebar'> */}
           <List className='list'>
+            <IconButton onClick={handleDrawerClose}>
+            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          </IconButton>
             {['Dashboard', 'Add Prescription', 'Post Session Notes', 'Pending Tasks', 'Therapist', 'Patients', 'Patients', 'Calender', 'Reports', 'Settings'].map((text, index) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
