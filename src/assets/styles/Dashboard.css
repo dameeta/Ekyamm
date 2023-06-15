@@ -63,6 +63,7 @@
 .topCards {
     /* background: rgba(255, 255, 255, 0.5); */
     box-sizing: border-box;
+    display: flex;
 
 /* Auto layout */
 

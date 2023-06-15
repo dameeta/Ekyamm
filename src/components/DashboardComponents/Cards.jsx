@@ -1,4 +1,4 @@
-import { ArchiveTwoTone, ArrowUpward, FileCopyTwoTone, GetAppTwoTone, MoreHoriz, Notifications, PictureAsPdfTwoTone } from '@mui/icons-material'
+import { ArchiveTwoTone, ArrowUpward, FileCopyTwoTone, GetAppTwoTone, MoreHoriz, Notifications, PendingActionsOutlined, PictureAsPdfTwoTone } from '@mui/icons-material'
 import { Avatar, Box, Card, Grid, Menu, MenuItem, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import "../../assets/styles/Dashboard.css"
@@ -29,13 +29,13 @@ const Cards = () => {
               <Grid item>
                 <Grid container alignItems="center">
                   <Grid item>
-                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>Logo</Typography>
+                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}><PendingActionsOutlined/></Typography>
                   </Grid>
                   <Grid item>
                     <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>|</Typography>
                   </Grid>
                   <Grid item>
-                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>Tasks</Typography>
+                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>Pending Tasks</Typography>
                   </Grid>
                   <Grid item>
                     {/* <Avatar
