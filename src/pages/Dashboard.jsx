@@ -162,6 +162,9 @@ export default function Dashboard() {
             <Grid item >
               <TherapistList />
             </Grid>
+            <Grid item >
+              <TherapistList />
+            </Grid>
           </Grid>
           </Grid>
         </Grid>
