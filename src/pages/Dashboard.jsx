@@ -23,6 +23,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import Cards from '../components/DashboardComponents/Cards';
 import { Grid } from '@mui/material';
 import TherapistList from '../components/DashboardComponents/TherapistList';
+import Chats from '../components/DashboardComponents/Chats';
 
 const drawerWidth = 240;
 
@@ -163,7 +164,7 @@ export default function Dashboard() {
               <TherapistList />
             </Grid>
             <Grid item >
-              <TherapistList />
+              <Chats/>
             </Grid>
           </Grid>
           </Grid>
